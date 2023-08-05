@@ -1,8 +1,12 @@
-function Projects() {
-    return <>
+import NavBar from "../../components/NavBar/NavBar";
 
-    <div>Projects Page</div>
+function Projects() {
+  return (
+    <>
+      <NavBar />
+      <div>Projects Page</div>
     </>
+  );
 }
 
-export default Projects
+export default Projects;

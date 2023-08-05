@@ -1,8 +1,12 @@
-function Cv() {
-    return <>
+import NavBar from "../../components/NavBar/NavBar";
 
-    <div>Cv Page</div>
+function Cv() {
+  return (
+    <>
+      <NavBar />
+      <div>Cv Page</div>
     </>
+  );
 }
 
-export default Cv
+export default Cv;

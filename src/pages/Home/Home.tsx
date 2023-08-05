@@ -1,10 +1,13 @@
-import NavBar from "../../components/NavBar/NavBar"
+import Hero from "../../components/Hero/Hero";
+import NavBar from "../../components/NavBar/NavBar";
 
 function Home() {
-    return <>
-    <NavBar />
-    <div>Home Page</div>
-    </>
+  return (
+    <div className="h-full w-full">
+      <NavBar />
+      <Hero />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
