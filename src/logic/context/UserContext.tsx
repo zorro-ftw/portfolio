@@ -9,6 +9,7 @@ export const UserContext = createContext<ContextProps>({
       navigatesTo: "",
     },
   ],
+  skillsArray: [],
 });
 
 type ChildrenProps = {
@@ -18,6 +19,7 @@ type ChildrenProps = {
 type ContextProps = {
   userData: UserDataProp;
   routersArray: RouterProp[];
+  skillsArray: string[];
 };
 
 type UserDataProp = {
@@ -60,8 +62,28 @@ export function UserProvider({ children }: ChildrenProps) {
       navigatesTo: "/cv",
     },
   ];
+
+  // Skills in Home page
+  const skillsArray: string[] = [
+    "React",
+    "Vue",
+    "Next.js",
+    "Javascript",
+    "Typescript",
+    "Tailwind",
+    "HTML",
+    "CSS",
+    "Scss",
+    "Storybook",
+    "Postman",
+    "headlessUI",
+    "Docker",
+    "git",
+    "Github",
+    "Figma",
+  ];
   return (
-    <UserContext.Provider value={{ userData, routersArray }}>
+    <UserContext.Provider value={{ userData, routersArray, skillsArray }}>
       {children}
     </UserContext.Provider>
   );

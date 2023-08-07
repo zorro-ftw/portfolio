@@ -1,3 +1,4 @@
+import { ContactBanner } from "../../components/ContactBanner/ContactBanner";
 import Hero from "../../components/Hero/Hero";
 import NavBar from "../../components/NavBar/NavBar";
 import Skills from "../../components/Skills/Skills";
@@ -8,6 +9,7 @@ function Home() {
       <NavBar />
       <Hero />
       <Skills />
+      <ContactBanner />
     </div>
   );
 }

@@ -53,8 +53,8 @@ function NavBar() {
         onClick={handleDrawer}
       ></div>
       <div
-        className={`w-full h-12 flex justify-center sm:justify-evenly items-center xl:px-24 md:px-6 pt-2 sm:sticky sm:top-0 ${
-          isScrolled && ` sm:backdrop-blur-md sm:bg-opacity-90 sm:shadow-lg `
+        className={`w-full h-12 flex justify-center sm:justify-evenly items-center xl:px-24 md:px-6 pt-2 sm:sticky sm:top-0 sm:z-10 ${
+          isScrolled && ` sm:backdrop-blur-lg  sm:shadow-lg `
         }`}
       >
         <div
