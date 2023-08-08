@@ -10,6 +10,7 @@ export const UserContext = createContext<ContextProps>({
     },
   ],
   skillsArray: [],
+  socialsArray: [],
 });
 
 type ChildrenProps = {
@@ -20,6 +21,7 @@ type ContextProps = {
   userData: UserDataProp;
   routersArray: RouterProp[];
   skillsArray: string[];
+  socialsArray: SocialProps[];
 };
 
 type UserDataProp = {
@@ -31,6 +33,11 @@ type RouterProp = {
   icon: [string, string];
   text: string;
   navigatesTo: string;
+};
+
+type SocialProps = {
+  link: string;
+  alt: string;
 };
 
 export function UserProvider({ children }: ChildrenProps) {
@@ -82,8 +89,26 @@ export function UserProvider({ children }: ChildrenProps) {
     "Github",
     "Figma",
   ];
+
+  // Social links
+  const socialsArray: SocialProps[] = [
+    {
+      link: "mailto:zorer.salih@gmail.com",
+      alt: "Email",
+    },
+    {
+      link: "https://www.linkedin.com/in/zorersalih/",
+      alt: "Linkedin",
+    },
+    {
+      link: "https://github.com/zorro-ftw",
+      alt: "Github",
+    },
+  ];
   return (
-    <UserContext.Provider value={{ userData, routersArray, skillsArray }}>
+    <UserContext.Provider
+      value={{ userData, routersArray, skillsArray, socialsArray }}
+    >
       {children}
     </UserContext.Provider>
   );
