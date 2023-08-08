@@ -66,14 +66,14 @@ export function UserProvider({ children }: ChildrenProps) {
   // Skills in Home page
   const skillsArray: string[] = [
     "React",
-    "Vue",
+    "Vue.js",
     "Next.js",
     "Javascript",
     "Typescript",
     "Tailwind",
     "HTML",
     "CSS",
-    "Scss",
+    "Sass",
     "Storybook",
     "Postman",
     "headlessUI",

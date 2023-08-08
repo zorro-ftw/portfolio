@@ -6,7 +6,7 @@ import JsLogo from "../../assets/skills_js.svg";
 import HTMLLogo from "../../assets/skills_html.svg";
 import NextLogo from "../../assets/skills_next.svg";
 import CSSLogo from "../../assets/skills_css.svg";
-import ScssLogo from "../../assets/skills_scss.svg";
+import SassLogo from "../../assets/skills_scss.svg";
 import StorybookLogo from "../../assets/skills_storybook.svg";
 import TsLogo from "../../assets/skills_ts.svg";
 import TailwindLogo from "../../assets/skills_tailwind.svg";
@@ -23,12 +23,12 @@ type SkillCardProps = {
 
 const logoDecider: { [key: string]: string } = {
   React: ReactLogo,
-  Vue: VueLogo,
+  "Vue.js": VueLogo,
   Javascript: JsLogo,
   HTML: HTMLLogo,
   "Next.js": NextLogo,
   CSS: CSSLogo,
-  Scss: ScssLogo,
+  Sass: SassLogo,
   Storybook: StorybookLogo,
   Typescript: TsLogo,
   Tailwind: TailwindLogo,
