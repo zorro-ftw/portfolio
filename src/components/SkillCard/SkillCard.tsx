@@ -45,7 +45,7 @@ export function SkillCard({ title }: SkillCardProps) {
 
   return (
     <div
-      className={` w-32 sm:w-36 h-24 flex flex-col gap-2 justify-center items-center ${theme.siteBackground} ${theme.inputBorder} border-solid border-2 rounded-lg drop-shadow-lg cursor-pointer `}
+      className={` w-32 sm:w-36 h-24 flex flex-col gap-2 justify-center items-center hover:border-inputFocus-light dark:hover:border-inputFocus-dark ${theme.siteBackground} ${theme.inputBorder} border-solid border-2 rounded-lg drop-shadow-lg cursor-pointer hover:shadow-hover  `}
     >
       <img
         src={logoDecider[title]}

@@ -33,6 +33,10 @@ export default {
       animation: {
         wave: "waving 2s linear infinite",
       },
+      boxShadow: {
+        hover:
+          "rgba(63, 186, 194, 0.25) 0px 0px 20px, rgba(63, 186, 194, 0.22) 0px 0px 10px",
+      },
     },
   },
   plugins: [],
