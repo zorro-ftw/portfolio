@@ -7,7 +7,7 @@ export function ContactBanner() {
   const { theme } = useContext(ThemeContext);
   const { socialsArray } = useContext(UserContext);
   const socialPinsDisplay = socialsArray.map((s) => (
-    <SocialPin link={s.link} alt={s.alt} />
+    <SocialPin link={s.link} alt={s.alt} hasBorder={true} />
   ));
 
   return (

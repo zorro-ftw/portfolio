@@ -1,10 +1,13 @@
+import { AboutMain } from "../../components/AboutMain/AboutMain";
+import { Footer } from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 
 function About() {
   return (
     <>
       <NavBar />
-      <div>About Page</div>
+      <AboutMain />
+      <Footer />
     </>
   );
 }

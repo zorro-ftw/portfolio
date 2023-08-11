@@ -15,7 +15,7 @@ export const ThemeContext = createContext<ContextProps>({
     inputFocus: "",
     inputText: "",
     inputBg: "",
-    socialPinBg: "",
+    footerBg: "",
   },
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   toggleDarkMode: () => {},
@@ -44,7 +44,7 @@ type ThemeProps = {
   inputFocus: string;
   inputText: string;
   inputBg: string;
-  socialPinBg: string;
+  footerBg: string;
 };
 
 export function ThemeProvider({ children }: ChildrenProps) {
@@ -82,7 +82,7 @@ export function ThemeProvider({ children }: ChildrenProps) {
     inputFocus: "border-inputFocus-light dark:border-inputFocus-dark",
     inputText: "text-inputText-light dark:text-inputText-dark",
     inputBg: "bg-inputBg-light dark:bg-inputBg-dark",
-    socialPinBg: "bg-siteBackground-dark dark:bg-siteBackground-light",
+    footerBg: "bg-siteBackground-light dark:bg-black",
   };
 
   function toggleDarkMode() {
