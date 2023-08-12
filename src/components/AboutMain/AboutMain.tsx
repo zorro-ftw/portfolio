@@ -21,6 +21,7 @@ export function AboutMain() {
         <p className={`${theme.primaryText} whitespace-pre-line`}>
           {userData.biography}
         </p>
+        <p className={`${theme.link} italic`}>{userData.motto}</p>
       </main>
     </>
   );

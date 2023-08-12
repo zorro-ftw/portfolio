@@ -8,6 +8,7 @@ export function Footer() {
   const { theme } = useContext(ThemeContext);
   const socialPinsDisplay = socialsArray.map((s) => (
     <SocialPin
+      key={s.alt}
       link={s.link}
       alt={s.alt}
       backgroundColor={`${theme.footerBg}`}

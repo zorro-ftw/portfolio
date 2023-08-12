@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 export const UserContext = createContext<ContextProps>({
-  userData: { fullName: "", biography: "" },
+  userData: { fullName: "", biography: "", motto: "" },
   routersArray: [
     {
       icon: ["", ""],
@@ -27,6 +27,7 @@ type ContextProps = {
 type UserDataProp = {
   fullName: string;
   biography: string;
+  motto: string;
 };
 
 type RouterProp = {
@@ -43,19 +44,29 @@ type SocialProps = {
 export function UserProvider({ children }: ChildrenProps) {
   const userData: UserDataProp = {
     fullName: "Salih Zorer",
-    biography: `In the realm of lifelong learning and transformation, my remarkable journey stands as a testament to the power of embracing change and seizing opportunities. My story is one of curiosity, innovation, and unyielding dedication to growth.
+    biography: `I came into this world on December 14, 1992, in the vibrant city of Istanbul, Turkey. My early life was uniquely shaped by my father's profession as a policeman, which led my family to move across different cities. This transient lifestyle meant my primary and elementary education was spread across various locations, fostering adaptability and a sense of curiosity about the world around me. Even as a young child, I found myself captivated by the mysteries of the internet and how websites functioned.
 
-    My path was set in motion in Ankara, Turkey, where my inquisitive mind was captivated by the intricate mechanics of the world. As I grew, so did my fascination with the internet's enigmatic workings and the art of website creation. Despite pursuing a degree in Mechanical Engineering at the renowned Middle East Technical University, my passion for coding robotic behaviors and developing automated solutions in MATLAB was unwavering.
+    My educational journey took a pivotal turn when my family settled in Ankara, where I was accepted into Ankara Atatürk Anatolian High School. The sense of academic achievement I cultivated during this time propelled me further. I was eventually admitted to the prestigious Middle East Technical University to pursue a degree in Mechanical Engineering. It was during my university years that I discovered my fascination with coding, robotics, and creating innovative solutions through technology.
     
-    The aviation industry offered me a platform to showcase my mechanical prowess, yet my heart yearned for the realm of Information Technology. Taking a calculated leap into the world of coding, I enrolled in an introductory software development course. This experience ignited a fervent determination to embark on a more immersive educational journey, leading me to the doors of Jagaad Academy.
+    After completing my studies, I found myself in the dynamic environment of TurkishAerospace, the leading aviation and defense company in Turkey. For six years, I dedicated myself to this company, harnessing my determination and honing both technical and soft skills. However, as time passed, a strong desire to transition into the realm of IT began to take root within me. I found myself increasingly drawn to the world of software development, automation, and the endless possibilities they held.
     
-    Jagaad Academy's nurturing environment provided the perfect soil for my growth. Graduating as the top performer, I not only honed my coding skills but also developed into a holistic IT professional—a creative problem solver and a skilled communicator.
+    This desire led me to enroll in a software development course offered by my university's Computer Engineering department. The course provided a glimpse into the realm of coding, igniting a passion within me to create and innovate using technology. The spark was lit, and I began to explore avenues to further enhance my skills and delve deeper into the world of coding.
     
-    Equipped with my newfound skills and an unquenchable thirst for learning, I ventured into the realm of job applications, primed for my first junior developer role. In an unexpected twist, Jagaad, the institution that had shaped my transformation, extended an invitation for me to become a junior developer within their team. This offer was a testament to my dedication and a heartening full-circle moment in my journey.
+    It was during this quest for growth that I stumbled upon Jagaad Academy. Eager to expand my knowledge, I enrolled in their Frontend Course, a six-month online program that promised a comprehensive learning experience. Little did I know that this decision would be the turning point that would redefine my career trajectory.
     
-    My commitment to growth and learning led me to gracefully balance my roles as a junior developer at Jagaad Software House and a tutor at Jagaad Academy. My embodiment of the motto "Once you stop learning, you start dying" shone through as a guiding light in my path.
+    Through Jagaad Academy, I not only acquired a diverse range of technical skills but also fostered a problem-solving mindset, a curiosity-driven approach, and a penchant for creativity. Armed with these newfound abilities, I embarked on a journey to secure my first role as a developer, confident in my skills and ready to face new challenges head-on.
     
-    As I continue to navigate the dynamic landscape of technology, my journey stands as a beacon of inspiration. It underscores the beauty of embracing change and seizing every opportunity for growth. From a curious Mechanical Engineer to a respected junior developer and tutor, my narrative is a celebration of transformation, resilience, and the enduring quest for knowledge.`,
+    Just as I was preparing for interviews in the IT industry, fate had a remarkable twist in store for me. Unexpectedly, Jagaad offered me a position as a junior developer within their team. It was a humbling honor to be recognized by the very institution that had played a pivotal role in shaping my skills and knowledge. However, this wasn't the only opportunity presented to me.
+    
+    In addition to the developer role, Jagaad extended an invitation for me to join their esteemed team of tutors at Jagaad Academy. The chance to impart knowledge and support aspiring IT professionals in their learning journeys was an offer I couldn't refuse. This role allowed me to give back to the community that had nurtured my growth and development.
+    
+    As a person, I'm known for my sense of humor, problem-solving acumen, and team-oriented nature. My friends often refer to me as the "genius of the group," a playful moniker that reflects my approach to challenges. Communication comes naturally to me, fostering connections and collaborations that drive me forward.
+    
+    My journey has been defined by challenges turned into opportunities, from the frequent relocations of my childhood to navigating a shift from aerospace to IT. Along the way, I've been recognized for my achievements — gaining admission to esteemed institutions, excelling in a prominent aerospace company, and graduating as the top performer from Jagaad Academy's Frontend Course.
+    
+    Currently, I thrive as a Frontend Developer at Jagaad, simultaneously embracing the role of Assistant Tutor at Jagaad Academy. This dual role allows me to continue my journey of learning while also supporting the growth of others. Looking back, my legacy is one of transformation, adaptability, and a relentless pursuit of knowledge.
+    `,
+    motto: '"Once you stop learning, you start dying."',
   };
 
   // Routers in NavBar
