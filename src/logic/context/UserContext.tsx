@@ -11,6 +11,7 @@ export const UserContext = createContext<ContextProps>({
   ],
   skillsArray: [],
   socialsArray: [],
+  projectsArray: [],
 });
 
 type ChildrenProps = {
@@ -22,6 +23,7 @@ type ContextProps = {
   routersArray: RouterProp[];
   skillsArray: string[];
   socialsArray: SocialProps[];
+  projectsArray: ProjectProps[];
 };
 
 type UserDataProp = {
@@ -39,6 +41,15 @@ type RouterProp = {
 type SocialProps = {
   link: string;
   alt: string;
+};
+
+export type ProjectProps = {
+  title: string;
+  alt: string;
+  codeURL: string;
+  imageURL: string;
+  liveURL?: string;
+  techStack?: string[];
 };
 
 export function UserProvider({ children }: ChildrenProps) {
@@ -128,9 +139,34 @@ export function UserProvider({ children }: ChildrenProps) {
       alt: "Github",
     },
   ];
+
+  const projectsArray: ProjectProps[] = [
+    {
+      title: "Test",
+      alt: "Test",
+      codeURL: "https://github.com/zorro-ftw/meubel-house",
+      imageURL:
+        "https://user-images.githubusercontent.com/86876940/229932839-0ee782c3-e37d-4bf0-bbd4-c36b35b61f54.png",
+      liveURL: "https://loquacious-cendol-fff34b.netlify.app/",
+    },
+    {
+      title: "Test2",
+      alt: "Test2",
+      codeURL: "https://github.com/zorro-ftw/meubel-house",
+      imageURL:
+        "https://user-images.githubusercontent.com/86876940/229932839-0ee782c3-e37d-4bf0-bbd4-c36b35b61f54.png",
+    },
+  ];
+
   return (
     <UserContext.Provider
-      value={{ userData, routersArray, skillsArray, socialsArray }}
+      value={{
+        userData,
+        routersArray,
+        skillsArray,
+        socialsArray,
+        projectsArray,
+      }}
     >
       {children}
     </UserContext.Provider>
