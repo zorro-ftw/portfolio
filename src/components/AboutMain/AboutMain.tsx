@@ -21,7 +21,9 @@ export function AboutMain() {
         <p className={`${theme.primaryText} whitespace-pre-line`}>
           {userData.biography}
         </p>
-        <p className={`${theme.link} italic`}>{userData.motto}</p>
+        <p className={`${theme.link} italic self-start sm:self-auto`}>
+          {userData.motto}
+        </p>
       </main>
     </>
   );
