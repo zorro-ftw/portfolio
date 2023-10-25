@@ -16,6 +16,7 @@ import DockerLogo from "../../assets/skills_docker.svg";
 import gitLogo from "../../assets/skills_git.svg";
 import GithubLogo from "../../assets/skills_github.svg";
 import FigmaLogo from "../../assets/skills_figma.svg";
+import NuxtLogo from "../../assets/skills_nuxt.svg";
 
 type SkillCardProps = {
   title: string;
@@ -27,6 +28,7 @@ const logoDecider: { [key: string]: string } = {
   Javascript: JsLogo,
   HTML: HTMLLogo,
   "Next.js": NextLogo,
+  "Nuxt.js": NuxtLogo,
   CSS: CSSLogo,
   Sass: SassLogo,
   Storybook: StorybookLogo,

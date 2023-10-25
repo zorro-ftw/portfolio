@@ -109,6 +109,7 @@ export function UserProvider({ children }: ChildrenProps) {
     "React",
     "Vue.js",
     "Next.js",
+    "Nuxt.js",
     "Javascript",
     "Typescript",
     "Tailwind",
