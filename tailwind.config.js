@@ -7,6 +7,10 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        desktopSS: "url('/src/assets/laptop_screenshot.png')",
+        mobileSS: "url('/src/assets/mobile_screenshot.png')",
+      },
       colors: {
         siteBackground: { light: "#f5f5f5", dark: "#212121" },
         primaryButton: { light: "#3fbac2", dark: "#3fbac2" },
