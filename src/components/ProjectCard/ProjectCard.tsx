@@ -1,14 +1,18 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../logic/context/ThemeContext";
 import { type ProjectProps } from "../../logic/context/UserContext";
+import { PrimaryButton } from "../PrimaryButton/PrimaryButton";
+import Tag from "../Tag/Tag";
 
 export function ProjectCard({ project }: { project: ProjectProps }) {
   const { theme } = useContext(ThemeContext);
 
+  const tags = project.techStack?.map((tech) => <Tag key={tech} text={tech} />);
+
   return (
     <>
       <div
-        className={`w-full py-10 px-2 sm:px-6 flex flex-col gap-2 justify-center items-center hover:border-inputFocus-light dark:hover:border-inputFocus-dark ${theme.siteBackground} ${theme.inputBorder} border-solid border-2 rounded-lg drop-shadow-lg cursor-pointer hover:shadow-hover  `}
+        className={`group/project-card relative w-full min-h-full py-10 px-2 sm:px-6 flex flex-col items-center hover:border-inputFocus-light dark:hover:border-inputFocus-dark ${theme.siteBackground} ${theme.inputBorder} border-solid border-2 rounded-lg drop-shadow-lg hover:shadow-hover  `}
       >
         <div className="w-full flex flex-wrap-reverse gap-8 justify-center">
           <div className="bg-desktopSS bg-cover bg-no-repeat bg-center w-64 h-36 px-8 py-2 sm:w-96 sm:h-64 sm:px-4 sm:py-4 flex justify-center items-center">
@@ -26,27 +30,26 @@ export function ProjectCard({ project }: { project: ProjectProps }) {
             />
           </div>
         </div>
-        <span className={`${theme.primaryText}`}>{project.title}</span>
+        <span className={`${theme.primaryText} text-2xl mt-6`}>
+          {project.title}
+        </span>
         {project.description && (
-          <span className={`${theme.secondaryText}`}>
+          <span className={`${theme.secondaryText} text-sm mt-4`}>
             {project.description}
           </span>
         )}
-        <div className={`flex flex-row gap-2`}>
-          <a
-            href={project.codeURL}
-            className={`${theme.secondaryText} px-2 py-1 rounded-md ${theme.hoverBg} italic`}
-          >
-            Code
-          </a>
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-b from-black opacity-0 group-hover/project-card:opacity-100 duration-300" />
+        <div className="absolute top-0 h-fit px-10 pt-6 flex flex-wrap gap-2 opacity-0 group-hover/project-card:opacity-100 duration-300">
+          {tags}
+        </div>
+        <div className={`relative flex gap-8 mt-4`}>
+          <PrimaryButton href={project.codeURL} message="Code" />
           {project.liveURL ? (
-            <a
+            <PrimaryButton
               href={project.liveURL}
-              className={`${theme.secondaryText} px-2 py-1 rounded-md ${theme.hoverBg} italic`}
-            >
-              <i className={`fa-solid fa-record-vinyl mr-1 ${theme.link}`}></i>
-              Live
-            </a>
+              message="Live"
+              iconClasses="fa-solid fa-record-vinyl"
+            />
           ) : (
             ""
           )}

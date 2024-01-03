@@ -146,11 +146,23 @@ export function UserProvider({ children }: ChildrenProps) {
   const projectsArray: ProjectProps[] = [
     {
       title: "Test",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, est ea dolor exercitationem aut vero. Pariatur expedita hic, distinctio officia minima nihil sit ipsum saepe cumque ullam autem nemo eaque!",
       alt: "Test",
       codeURL: "https://github.com/zorro-ftw/meubel-house",
       desktopSSUrl:
         "https://user-images.githubusercontent.com/86876940/229932839-0ee782c3-e37d-4bf0-bbd4-c36b35b61f54.png",
       liveURL: "https://loquacious-cendol-fff34b.netlify.app/",
+      techStack: [
+        "React",
+        "Tailwind",
+        "HTML",
+        "CSS",
+        "React",
+        "Tailwind",
+        "HTML",
+        "CSS",
+      ],
     },
     {
       title: "Test2",
