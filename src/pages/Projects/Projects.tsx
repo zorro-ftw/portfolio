@@ -8,9 +8,9 @@ function Projects() {
   return (
     <>
       <NavBar />
-      {/* <UnderConstruction /> */}
-      <ProjectsGrid />
-      <Footer />
+      <UnderConstruction />
+      {/* <ProjectsGrid /> */}
+      {/* <Footer /> */}
     </>
   );
 }
