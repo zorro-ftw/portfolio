@@ -1,6 +1,4 @@
-import { Footer } from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import { ProjectsGrid } from "../../components/ProjectsGrid/ProjectsGrid";
 
 import { UnderConstruction } from "../../components/UnderConstruction/UnderConstruction";
 
