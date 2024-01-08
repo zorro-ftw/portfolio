@@ -1,13 +1,13 @@
+import { Footer } from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import { UnderConstruction } from "../../components/UnderConstruction/UnderConstruction";
+import { ProjectsGrid } from "../../components/ProjectsGrid/ProjectsGrid";
 
 function Projects() {
   return (
     <>
       <NavBar />
-      <UnderConstruction />
-      {/* <ProjectsGrid /> */}
-      {/* <Footer /> */}
+      <ProjectsGrid />
+      <Footer />
     </>
   );
 }

@@ -17,7 +17,7 @@ export function ProjectsGrid() {
         className={`mt-9 mb-12 px-4 sm:px-5 md:px-7 lg:px-9 xl:px-20 2xl:px-32`}
       >
         <h2
-          className={`${theme.headingText} mb-6 text-3xl text-center font-bold`}
+          className={`${theme.headingText} mb-12 text-3xl text-center font-bold`}
         >
           Projects
         </h2>
