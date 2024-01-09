@@ -119,6 +119,7 @@ export function UserProvider({ children }: ChildrenProps) {
     "CSS",
     "Sass",
     "Storybook",
+    "Histoire",
     "Postman",
     "headlessUI",
     "Docker",

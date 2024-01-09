@@ -17,6 +17,7 @@ import gitLogo from "../../assets/skills_git.svg";
 import GithubLogo from "../../assets/skills_github.svg";
 import FigmaLogo from "../../assets/skills_figma.svg";
 import NuxtLogo from "../../assets/skills_nuxt.svg";
+import HistoireLogo from "../../assets/skills_histoire.svg";
 
 type SkillCardProps = {
   title: string;
@@ -40,6 +41,7 @@ const logoDecider: { [key: string]: string } = {
   git: gitLogo,
   Github: GithubLogo,
   Figma: FigmaLogo,
+  Histoire: HistoireLogo,
 };
 
 export function SkillCard({ title }: SkillCardProps) {
