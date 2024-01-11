@@ -151,10 +151,8 @@ export function UserProvider({ children }: ChildrenProps) {
         "E-commerce website project for a furniture shop. Featuring multiple pages such as Home, Shop, Cart, Checkout, single product pages and more along with login and cart operations functionality. Built with React and styled-components.",
       alt: "meubel-house",
       codeURL: "https://github.com/zorro-ftw/meubel-house",
-      desktopSSUrl:
-        "https://github.com/zorro-ftw/meubel-house/assets/86876940/635b102e-eddd-4010-92d9-b9c38ebe424c",
-      mobileSSUrl:
-        "https://github.com/zorro-ftw/meubel-house/assets/86876940/efc5abf1-2b6a-4b44-be9f-d1b42a813ec9",
+      desktopSSUrl: "/src/assets/meubel-house-desktop.webp",
+      mobileSSUrl: "/src/assets/meubel-house-mobile.webp",
       liveURL: "https://loquacious-cendol-fff34b.netlify.app/",
       techStack: [
         "React",
@@ -172,10 +170,8 @@ export function UserProvider({ children }: ChildrenProps) {
         "A dashboard page for car rental company, built with Next.js.",
       alt: "car-rental",
       codeURL: "https://github.com/zorro-ftw/car-rent",
-      desktopSSUrl:
-        "https://user-images.githubusercontent.com/86876940/229932839-0ee782c3-e37d-4bf0-bbd4-c36b35b61f54.png",
-      mobileSSUrl:
-        "https://github.com/zorro-ftw/car-rent/assets/86876940/706aaf7e-70e2-4dc9-a19b-398d9f8845c1",
+      desktopSSUrl: "/src/assets/car-rent-desktop.webp",
+      mobileSSUrl: "/src/assets/car-rent-mobile.webp",
       liveURL: "https://car-rent-zorro-ftw.vercel.app/dashboard",
       techStack: ["Next.js", "Scss", "HTML", "Javascript", "axios"],
     },
@@ -185,10 +181,8 @@ export function UserProvider({ children }: ChildrenProps) {
         "A simple web application built with Next.js and Tailwind CSS. This project serves as a practical example of a compact yet efficient student management system with three main pages.",
       alt: "student-management",
       codeURL: "https://github.com/zorro-ftw/course-catalog",
-      desktopSSUrl:
-        "https://github.com/zorro-ftw/course-catalog/assets/86876940/de449f07-a742-4179-ac26-9b2ef2c640c1",
-      mobileSSUrl:
-        "https://github.com/zorro-ftw/course-catalog/assets/86876940/ed832045-63cb-4971-bf32-c09ce733fcb1",
+      desktopSSUrl: "/src/assets/course-catalog-desktop.webp",
+      mobileSSUrl: "/src/assets/course-catalog-mobile.webp",
       liveURL: "https://course-catalog-navy.vercel.app/",
       techStack: ["Next.js", "Tailwind", "axios", "Context API", "eslint"],
     },
@@ -198,10 +192,8 @@ export function UserProvider({ children }: ChildrenProps) {
         "Landing page for NFT marketplace. Built with HTML, CSS, Scss and Javascript.",
       alt: "nfters",
       codeURL: "https://github.com/zorro-ftw/nfters",
-      desktopSSUrl:
-        "https://user-images.githubusercontent.com/86876940/227050951-229e1a2e-d815-40ea-a2b3-61d1000ea41c.png",
-      mobileSSUrl:
-        "https://github.com/zorro-ftw/nfters/assets/86876940/f020be20-dbd5-4a58-af8c-8a843e3e59a3",
+      desktopSSUrl: "/src/assets/nfters-desktop.webp",
+      mobileSSUrl: "/src/assets/nfters-mobile.webp",
       liveURL: "https://zorro-ftw.github.io/nfters/",
       techStack: ["HTML", "CSS", "Javascript", "Scss"],
     },
@@ -211,9 +203,7 @@ export function UserProvider({ children }: ChildrenProps) {
         "Landing page UI for a payment system. Pixel-perfect implementation of design with plain HTML & CSS.",
       alt: "shape-voice",
       codeURL: "https://github.com/zorro-ftw/shapevoice-landing",
-      desktopSSUrl:
-        "https://user-images.githubusercontent.com/86876940/227037475-89cb9f0f-57e6-4df7-96f3-48f69f5dfcbc.png",
-
+      desktopSSUrl: "/src/assets/shapevoice-desktop.webp",
       liveURL: "https://zorro-ftw.github.io/shapevoice-landing/",
       techStack: ["HTML", "CSS"],
     },
