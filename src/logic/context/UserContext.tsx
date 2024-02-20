@@ -118,6 +118,7 @@ export function UserProvider({ children }: ChildrenProps) {
     "HTML",
     "CSS",
     "Sass",
+    "GraphQL",
     "Storybook",
     "Histoire",
     "Postman",
@@ -125,6 +126,7 @@ export function UserProvider({ children }: ChildrenProps) {
     "Docker",
     "git",
     "Github",
+    "GitLab",
     "Figma",
   ];
 

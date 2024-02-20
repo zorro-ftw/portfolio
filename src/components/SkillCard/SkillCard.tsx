@@ -18,6 +18,8 @@ import GithubLogo from "../../assets/skills_github.svg";
 import FigmaLogo from "../../assets/skills_figma.svg";
 import NuxtLogo from "../../assets/skills_nuxt.svg";
 import HistoireLogo from "../../assets/skills_histoire.svg";
+import GitLabLogo from "../../assets/skills_gitlab.svg";
+import GraphQLLogo from "../../assets/skills_graphql.svg";
 
 type SkillCardProps = {
   title: string;
@@ -32,6 +34,7 @@ const logoDecider: { [key: string]: string } = {
   "Nuxt.js": NuxtLogo,
   CSS: CSSLogo,
   Sass: SassLogo,
+  GraphQL: GraphQLLogo,
   Storybook: StorybookLogo,
   Typescript: TsLogo,
   Tailwind: TailwindLogo,
@@ -40,6 +43,7 @@ const logoDecider: { [key: string]: string } = {
   Docker: DockerLogo,
   git: gitLogo,
   Github: GithubLogo,
+  GitLab: GitLabLogo,
   Figma: FigmaLogo,
   Histoire: HistoireLogo,
 };
