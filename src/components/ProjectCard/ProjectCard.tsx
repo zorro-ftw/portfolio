@@ -41,7 +41,7 @@ export function ProjectCard({ project }: { project: ProjectProps }) {
               {project.description}
             </span>
           )}
-          <div className="absolute inset-0 rounded-lg bg-gradient-to-b from-black opacity-0 group-hover/project-card:opacity-100 duration-300" />
+          <div className="absolute inset-0 rounded-lg bg-gradient-to-b dark:from-black from-gray-900 opacity-0 group-hover/project-card:opacity-100 duration-300" />
           <div className="absolute top-0 h-fit px-10 pt-6 flex flex-wrap gap-2 opacity-0 group-hover/project-card:opacity-100 duration-300">
             {tags}
           </div>
