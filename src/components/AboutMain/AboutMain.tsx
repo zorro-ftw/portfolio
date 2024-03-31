@@ -8,7 +8,7 @@ export function AboutMain() {
   return (
     <>
       <main
-        className={`flex flex-col items-center mt-10 mb-10 px-8 text-sm sm:text-base gap-6 sm:gap-10 md:gap-14 lg:gap-16 sm:px-16 md:px-26 lg:px-40 2xl:px-80 `}
+        className={`flex flex-col items-center mt-10 mb-10 px-8 pb-12 text-sm sm:text-base gap-6 sm:gap-10 md:gap-14 lg:gap-16 sm:px-16 md:px-26 lg:px-40 2xl:px-80 `}
       >
         <div className="w-full flex flex-col items-center">
           <img
