@@ -57,24 +57,13 @@ export type ProjectProps = {
 export function UserProvider({ children }: ChildrenProps) {
   const userData: UserDataProp = {
     fullName: "Salih Zorer",
-    biography: `I came into this world on December 14, 1992, in the vibrant city of Istanbul, Turkey. Even as a young child, I found myself captivated by the mysteries of the internet and how websites functioned.
+    biography: `I was born on December 14, 1992, in Istanbul, Turkey. My interest in technology and websites started early, and over time, I explored various engineering fields, particularly in automation, robotics, and electronics. I pursued a degree in Mechanical Engineering at Middle East Technical University, where coding became an essential tool in solving complex engineering problems. This early exposure cemented my passion for software development.
 
-    My educational journey lead me into Ankara Atatürk Anatolian High School. Later on I developed a more general engineering interests for automation, robotics & electronics. Eventually I ended up admitted to the prestigious Middle East Technical University to pursue a degree in Mechanical Engineering. Learning and using different coding tools and concepts to solve complex mechanism behaviors, robotic systems etc only fueled my interest about coding. I knew that I was going to be doing it as a living one day.
+After graduation, I worked for six years at TurkishAerospace as a Manufacturing Engineer, contributing to various aircraft projects and refining my technical and problem-solving skills. However, my growing interest in software development led me to enroll in a condensed software development course offered by my university. During the pandemic, I made the most of the situation to shift my career direction towards becoming a developer.
 
-    After completing my studies, I found myself in the dynamic environment of TurkishAerospace, the leading aviation and defense company in Turkey. For six years, I dedicated myself to this company as a Manufacturing engineer; working on different type of aircraft projects and making the designs into a real, flying aircrafts, harnessing my determination and honing both technical and soft skills along the way. However, as time passed, a strong desire to transition into the realm of IT began to take root within me. I found myself increasingly drawn to the world of software development, automation, and the endless possibilities they held.
+Initially focusing on Flutter, I soon realized that Frontend Development offered broader opportunities. I joined Jagaad Academy’s six-month Frontend course and graduated with top honors. Following this, I spent a full year at Jagaad as a Junior Frontend Developer and Assistant Tutor, where I mentored aspiring developers.
 
-    By making 2020 covid pandemic and relaxed working conditions at the time an opportunity, I enrolled in a software development course offered by my university's Computer Engineering department. The course was a filtered down/condensed version of computer engineering study in the university and it provided a glimpse into the realm of coding. I tried to land a job as Flutter developer for a while, finally giving up on the idea because the title was so niche and vacancies were tough to grab for someone switching careers into it.
-
-    I changed my direction towards Frontend Developer, realizing the endless opportunities in web development and that the concept was pretty much same to interact with end users. It was during this time that I stumbled upon Jagaad Academy. Eager to expand my knowledge, I enrolled in their Frontend Course, a six-month online program that promised a comprehensive learning experience.
-
-    I graduated with a remarkable success from this program in the 1st place. Just as I was preparing for interviews in the IT industry, fate had a remarkable twist in store for me. Unexpectedly, Jagaad offered me a position as a junior developer within their team. It was a humbling honor to be recognized by the very institution that had played a pivotal role in shaping my skills and knowledge. However, this wasn't the only opportunity presented to me.
-
-    In addition to the developer role, Jagaad extended an invitation for me to join their esteemed team of tutors at Jagaad Academy. The chance to impart knowledge and support aspiring IT professionals in their learning journeys was an offer I couldn't refuse. This role allowed me to give back to the community that had nurtured my growth and development.
-
-    As a person, I'm known for my sense of humor, problem-solving acumen, and team-oriented nature. My friends often refer to me as the "genius of the group," a playful moniker that reflects my approach to challenges. Communication comes naturally to me, fostering connections and collaborations that drive me forward.
-
-    Currently, I thrive as a Frontend Developer at Jagaad, simultaneously embracing the role of Assistant Tutor at Jagaad Academy for a year now. This dual role allows me to continue my journey of learning while also supporting the growth of others. Looking back, my legacy is one of transformation, adaptability, and a relentless pursuit of knowledge. This is not my success story, not yet at least. This is just a beginning of chasing of a dream and I know for sure, there’s a lot more to come.
-`,
+Currently, I have been working as a Frontend Developer at Datazone for half a year. Datazone is a rapidly growing Data Manipulation Platform startup, serving three enterprise customers even before its public launch. We are on the verge of a public launch, and I'm excited to be part of a team that is shaping the future of data solutions.`,
     motto: '"Once you stop learning, you start dying."',
   };
 
