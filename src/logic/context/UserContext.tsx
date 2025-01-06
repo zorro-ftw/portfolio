@@ -100,6 +100,8 @@ Currently, I have been working as a Frontend Developer at Datazone for half a ye
     "Javascript",
     "Typescript",
     "Tailwind",
+    "jest",
+    "Testing Library",
     "HTML",
     "CSS",
     "Sass",

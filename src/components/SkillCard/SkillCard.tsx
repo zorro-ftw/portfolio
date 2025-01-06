@@ -20,6 +20,8 @@ import NuxtLogo from "../../assets/skills_nuxt.svg";
 import HistoireLogo from "../../assets/skills_histoire.svg";
 import GitLabLogo from "../../assets/skills_gitlab.svg";
 import GraphQLLogo from "../../assets/skills_graphql.svg";
+import JestLogo from "../../assets/skills_jest.svg";
+import TestingLibraryLogo from "../../assets/skills_testinglibrary.svg";
 
 type SkillCardProps = {
   title: string;
@@ -38,6 +40,8 @@ const logoDecider: { [key: string]: string } = {
   Storybook: StorybookLogo,
   Typescript: TsLogo,
   Tailwind: TailwindLogo,
+  jest: JestLogo,
+  "Testing Library": TestingLibraryLogo,
   Postman: PostmanLogo,
   headlessUI: HeadlessLogo,
   Docker: DockerLogo,
