@@ -74,11 +74,11 @@ Currently, I have been working as a Frontend Developer at Datazone for half a ye
       text: "Home",
       navigatesTo: "/",
     },
-    {
-      icon: ["fa-solid", "fa-laptop-code"],
-      text: "Projects",
-      navigatesTo: "/projects",
-    },
+    // {
+    //   icon: ["fa-solid", "fa-laptop-code"],
+    //   text: "Projects",
+    //   navigatesTo: "/projects",
+    // },
     {
       icon: ["fa-solid", "fa-user"],
       text: "About",
